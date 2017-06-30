@@ -1,10 +1,12 @@
 #!/bin/bash
 
+echo "enter the first coefficient"
 read Value1;
 if [[ $Value1 = 0 ]]; then 
     echo "Error";
     exit 0;
 fi
+echo "enter the second and third coefficient"
 read Value2;
 read Value3;
 D=$(( ($Value2)*($Value2)-4*($Value1)*($Value3) ));
