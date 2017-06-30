@@ -12,7 +12,6 @@ D=$(( ($Value2)*($Value2)-4*($Value1)*($Value3) ));
 if [ $D = 0 ]; then
     echo -n "x = "
     echo -e "scale=1\n-0.5*($Value2)/($Value1)" | bc
-    exit 0;
 elif [ $D -gt 0 ]; then
     echo -n "x1 = "
     echo -e "scale=1\n0.5*(-($Value2)+sqrt($D))/($Value1)" | bc
